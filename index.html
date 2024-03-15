@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Sheet</title>
+    <link rel="icon" href="Images/logo1.webp" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+    <div class="ImageContainer">
+        <img src="Images/1.jpg" alt="Image1" class="slide" height="300" width="200">
+        <img src="https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg" alt="Image2" class="slide" height="300" width="200">
+        <img src="Images/3.jpg" alt="Image3" class="slide" height="300" width="200">
+        <img src="Images/4.jpg" alt="Image4" class="slide" height="300" width="200">
+    </div>
+
+    <div class="nav">
+        <button onclick="goPrev()" type="button">
+            Previous
+        </button>
+        <button onclick="goNext()">
+            Next
+        </button>
+
+    </div>
+
+    <div class="container">
+        <h1>Matric Result Card</h1>
+        <p>2022-2024</p>
+
+        <table id="tb1" class="table" border="1px">
+            <tr>
+                <td colspan="2">Roll no: 001</td>
+                <td colspan="2">Status: Pass</td>
+            </tr>
+
+            <tr>
+                <td colspan="4">Name: Hamza Khalid</td>
+            </tr>
+            <tr>
+                <td colspan="4">Father Name: Khalid</td>
+            </tr>
+            <tr>
+                <td colspan="4">Group: Computer Sceince</td>
+            </tr>
+
+            <tr>
+                <th>Subject</th>
+                <th>Total Marks</th>
+                <th>Marks Obtained</th>
+                <th>Percentage</th>
+            </tr>
+
+            <tr>
+                <td>English</td>
+                <td>100</td>
+                <td>80</td>
+                <td>80%</td>
+            </tr>
+            <tr>
+                <td>Urdu</td>
+                <td>100</td>
+                <td>80</td>
+                <td>80%</td>
+            </tr>
+            <tr>
+                <td>Mathematics</td>
+                <td>100</td>
+                <td>80</td>
+                <td>80%</td>
+            </tr>
+            <tr>
+                <td>Biology</td>
+                <td>100</td>
+                <td>80</td>
+                <td>80%</td>
+            </tr>
+            <tr>
+                <td>Islamiyat</td>
+                <td>100</td>
+                <td>80</td>
+                <td>80%</td>
+            </tr>
+
+
+
+        </table>
+        <tr>
+            <td colspan="4">Total Marks = 500/600</td>
+        </tr>
+
+    </div>
+
+    <div class="addData">
+        <h1>Add Subject & Marks</h1>
+        <form name="sample" method="post">
+            <br>
+            Subject: <input type="text" name="subject">
+            Marks: <input type="number" name="marks">
+            Marks Obtained: <input type="number" name="marksObtained">
+            Percentage: <input type="number" name="percentage">
+            <br><br>
+            <input type="button" name="add" value="Add Data" onclick="addSubject();">
+            <hr>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
